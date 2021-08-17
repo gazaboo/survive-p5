@@ -1,0 +1,14 @@
+{
+  "name": "survive_node",
+  "version": "1.0.0",
+  "description": "p5.js game using node",
+  "author": "Florian Dadouchi<florian.dadouchi@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "socket.io": "^4.1.3"
+  }
+}
