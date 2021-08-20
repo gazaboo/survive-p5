@@ -32,5 +32,6 @@ class Player {
         y: this.y, 
         id: socket.id
       });
+
     }
   }

@@ -25,14 +25,15 @@ class Game {
     get_other_players_positions(socket){
       socket.on('data', data => {
         this.other_players.set(data.id, {x: data.x, y: data.y}); 
-        console.log("other_players", data)
       }) 
     }
 
     display_other_players(){
+      fill(255, 0, 0);
       for (let val of this.other_players.values()) {
-        circle(val.x, val.y, 60); 
+        circle(val.x, val.y, 80); 
       } 
+      fill(255); 
     }
   }
   
