@@ -20,6 +20,5 @@ console.log(`Running on http://${HOST}:${PORT}`);
 function newConnection(socket){
     socket.on('data', data => {
         socket.broadcast.emit('data', data); 
-        console.log(data);
     }); 
 }

@@ -17,7 +17,7 @@ class Game {
       this.adversaires.forEach( adversaire => {
         adversaire.display();
         adversaire.move();  
-        // adversaire.testCollision(this.player);
+        adversaire.testCollision(this.player);
       }); 
       return hasMoved; 
     }
